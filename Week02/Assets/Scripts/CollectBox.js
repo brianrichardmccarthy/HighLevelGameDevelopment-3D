@@ -1,5 +1,7 @@
 ﻿#pragma strict
 
+import UnityEngine.SceneManagement;
+
 var score: int;
 var timer: float;
 var clock: float;
@@ -53,7 +55,7 @@ function OnControllerColliderHit(col: ControllerColliderHit) {
 		GameObject.Find("Score").GetComponent.<UI.Text>().text ="Score: " + score;
 		GameObject.Find("Message").GetComponent.<UI.Text>().text = score + " Boxes Collected";
 		// print(score);
-		if (score == 3)
-		; // load a new scene
+		// if (score == 3)
+		// SceneManager.LoadScene("scene2"); // load a new scene
 	}
 }
